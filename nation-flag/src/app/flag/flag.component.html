@@ -1,0 +1,11 @@
+<div>
+    <select id="serviceInstance" class= "colm-s-2 " [(ngModel)]="name" (ngModelChange)="getContriesList($event)" PlaceHolder="Choose">
+        <option *ngFor="let continent of continentsList" [value]="continent" [label]="continent" ></option>
+        </select>
+        <select id="serviceInstance" class= "colm-s-2 "  PlaceHolder="Choose">
+            <option *ngFor="let country of countryName" [value]="country" [label]="country" ></option>
+            </select>
+            <select id="serviceInstance" class= "colm-s-2 "  PlaceHolder="Choose">
+                <option *ngFor="let flag of flag" [value]="flag" [label]="flag" ></option>
+                </select>
+</div>
